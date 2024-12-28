@@ -13,6 +13,10 @@
     margin-bottom: 20px; /* Add space below the title */
 }
 
+#resume{
+    width:100%;
+}
+
 /* About section styling */
 #About {
     background-color: #18453B; /* Green background for about section */
