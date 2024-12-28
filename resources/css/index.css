@@ -28,37 +28,39 @@
 
 /* Navigation button container */
 #NavButtons {
-    justify-content: center; /* Center the buttons */
-    align-items: center; /* Center buttons vertically */
+    display: flex; /* Align buttons horizontally */
+    justify-content: space-evenly; /* Evenly space the buttons */
+    align-items: center; /* Vertically center the buttons */
     padding: 10px;
     width: 100%; /* Ensure the buttons container takes full width */
-    max-width: 900px;
+    max-width: 900px; /* Constrain the width of buttons container */
     margin: 20px 0; /* Add space above and below the buttons */
 }
 
 /* Base button styles */
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 10px 20px; /* Consistent padding */
+    font-size: 16px; /* Consistent font size */
     cursor: pointer;
-    background-color: #18453B;
+    background-color: #18453B; /* green */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s ease;
-    margin: 5px;
-    max-width: 200px;
-    min-width: 120px;
-    height: auto;
-    line-height: 1.4;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    margin: 5px; /* Space between buttons */
+    flex: 1; /* Make buttons expand to take equal space */
+    max-width: 200px; /* Limit button width */
+    min-width: 120px; /* Ensure buttons don’t get too small */
+    height: auto; /* Allow height to adjust based on content */
+    line-height: 1.4; /* Set consistent line height to help text alignment */
+    display: inline-flex; /* Ensures height is consistent across buttons */
+    align-items: center; /* Vertically centers text */
+    justify-content: center; /* Horizontally centers text */
 }
 
 /* Hover effect */
 button:hover {
-    background-color: #0e2923;
+    background-color: #0e2923; /* Darker green on hover */
 }
 
 /* Headshot styling */
@@ -81,3 +83,30 @@ button:hover {
     margin: 0 auto; /* Center the content block */
 }
 
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+    /* Stack the buttons vertically on mobile */
+    #NavButtons {
+        flex-direction: column; /* Change buttons to stack vertically */
+        align-items: stretch; /* Make buttons stretch to full width */
+        justify-content: center; /* Center buttons in column */
+    }
+
+    /* Adjust button width for smaller screens */
+    button {
+        width: 100%; /* Make buttons take full width */
+        max-width: none; /* Remove the max-width to allow buttons to expand */
+        margin: 10px 0; /* Adjust space between buttons */
+    }
+
+    /* Adjust the content padding for mobile */
+    #HomepageContent {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    /* Adjust headshot size for smaller screens */
+    #headshot {
+        width: 200px;
+        height: 200px;
+    }
+}
