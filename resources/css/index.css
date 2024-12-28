@@ -26,7 +26,7 @@
     margin: 0 auto; /* Center content inside the parent */
 }
 
-/* Navigation button container */
+/* */
 #NavButtons {
     display: flex; /* Align buttons horizontally */
     justify-content: space-evenly; /* Evenly space the buttons */
@@ -72,7 +72,7 @@ button:hover {
 }
 
 /* Homepage content container */
-#HomepageContent {
+.HomepageContent {
     text-align: center;
     background-color: #fff;
     padding: 20px;
