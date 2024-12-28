@@ -44,3 +44,8 @@ button:hover {
     height: 300px;
 }
 
+#homepagecontent{
+    text-align: center;
+    background-color: #18453B;
+    width: 500px;
+}
