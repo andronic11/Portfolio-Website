@@ -12,6 +12,9 @@ button {
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s ease;
     margin: 10px;
+    max-width: 100px;
+    min-width: 30px;
+    max-height: 75px;
 
 }
 
