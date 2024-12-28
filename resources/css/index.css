@@ -6,8 +6,8 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: red; /* red */
-    color: red;
+    background-color: #18453B; /* green */
+    color: white;
     border: none;
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s ease;
@@ -16,6 +16,6 @@ button {
 }
 
 button:hover {
-    background-color: darkred; /* Darker red on hover */
+    background-color: #0e2923; /* Darker red on hover */
 }
 
