@@ -75,7 +75,7 @@
 /* Media query for mobile devices */
 @media screen and (max-width: 600px) {
     /* Stack the buttons vertically on mobile */
-    #NavButtons {
+    .buttons {
         flex-direction: column; /* Change buttons to stack vertically */
         align-items: center; /* Center the buttons horizontally */
         justify-content: center; /* Center buttons in column */
@@ -83,14 +83,14 @@
     }
 
     /* Adjust button width for smaller screens */
-    button {
-        width: 100%; /* Make buttons take 80% width of their container */
+    .buttons a {
+        width: 100%; /* Make buttons take 100% width of their container */
         max-width: none; /* Remove the max-width to allow buttons to expand */
         margin: 10px auto; /* Center the buttons and space them vertically */
     }
 
     /* Adjust the content padding for mobile */
-    #HomepageContent {
+    .HomepageContent {
         padding: 15px; /* Reduce padding for smaller screens */
     }
 
