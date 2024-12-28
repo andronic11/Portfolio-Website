@@ -27,40 +27,29 @@
 }
 
 /* */
-#NavButtons {
-    display: flex; /* Align buttons horizontally */
-    justify-content: space-evenly; /* Evenly space the buttons */
-    align-items: center; /* Vertically center the buttons */
-    padding: 10px;
-    width: 100%; /* Ensure the buttons container takes full width */
-    max-width: 900px; /* Constrain the width of buttons container */
-    margin: 20px 0; /* Add space above and below the buttons */
+.buttons {
+    border: 1px solid LightGrey;
+    padding: 40px 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
 }
-
-/* Base button styles */
-button {
-    padding: 10px 20px; /* Consistent padding */
-    font-size: 16px; /* Consistent font size */
-    cursor: pointer;
-    background-color: #18453B; /* green */
+  
+.buttons a {
+    background: #18453B;
+    border: 1px solid #18453B;
+    border-radius: 3px;
     color: white;
-    border: none;
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease;
-    margin: 5px; /* Space between buttons */
-    flex: 1; /* Make buttons expand to take equal space */
-    max-width: 200px; /* Limit button width */
-    min-width: 120px; /* Ensure buttons don’t get too small */
-    height: auto; /* Allow height to adjust based on content */
-    line-height: 1.4; /* Set consistent line height to help text alignment */
-    display: inline-flex; /* Ensures height is consistent across buttons */
-    align-items: center; /* Vertically centers text */
-    justify-content: center; /* Horizontally centers text */
+    display: inline-block;
+    margin: 10px;
+    padding: 14px;
+    text-decoration: none;
 }
-
-/* Hover effect */
-button:hover {
-    background-color: #0e2923; /* Darker green on hover */
+  
+.buttons a:hover {
+    background: white;
+    border: 1px solid #0e2923;
+    color: #0e2923;
 }
 
 /* Headshot styling */
