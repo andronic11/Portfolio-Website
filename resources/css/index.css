@@ -95,7 +95,7 @@ button:hover {
 
     /* Adjust button width for smaller screens */
     button {
-        width: 80%; /* Make buttons take 80% width of their container */
+        width: 100%; /* Make buttons take 80% width of their container */
         max-width: none; /* Remove the max-width to allow buttons to expand */
         margin: 10px auto; /* Center the buttons and space them vertically */
     }
