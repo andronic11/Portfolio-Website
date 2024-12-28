@@ -1,69 +1,83 @@
-.main{
+/* Main container for flexbox centering */
+.main {
     display: flex;
-}
-#Title{
-    font-family:Arial, Helvetica, sans-serif;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Ensure text is centered */
 }
 
+/* Title styling */
+#Title {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px; /* Add space below the title */
+}
+
+/* About section styling */
 #About {
     background-color: #18453B; /* Green background for about section */
     color: white;
     padding: 20px;
     width: 80%;
-    border-radius: 10px; /* Rounded corners */
-    font-size: 16px; /* Adjust font size for better readability */
-    line-height: 1.5; /* Improve text readability */
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.5;
     max-width: 900px;
-    margin: 0 auto; /* Center within parent */
+    margin: 0 auto; /* Center content inside the parent */
 }
 
-
-
+/* Navigation button container */
 #NavButtons {
-    justify-content: space-evenly; /* Evenly space out buttons */
-    align-items: center; /* Vertically center buttons */
-    padding: 10px; /* Optional, add some space around the buttons */
-    width: 100%; /* Take up the full width of the container */
-    max-width: 900px; /* Limit the maximum width of the button container */
-    margin: 0 auto; /* Center the button container */
+    justify-content: center; /* Center the buttons */
+    align-items: center; /* Center buttons vertically */
+    padding: 10px;
+    width: 100%; /* Ensure the buttons container takes full width */
+    max-width: 900px;
+    margin: 20px 0; /* Add space above and below the buttons */
 }
 
 /* Base button styles */
 button {
-    padding: 10px 20px; /* Consistent padding */
-    font-size: 16px; /* Consistent font size */
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-    background-color: #18453B; /* green */
+    background-color: #18453B;
     color: white;
     border: none;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px;
     transition: background-color 0.3s ease;
-    margin: 5px; /* Space between buttons */
-    max-width: 200px; /* Limit button width */
-    min-width: 120px; /* Ensure buttons don’t get too small */
-    height: auto; /* Allow height to adjust based on content */
-    line-height: 1.4; /* Set consistent line height to help text alignment */
-    display: inline-flex; /* Ensures height is consistent across buttons */
-    align-items: center; /* Vertically centers text */
-    justify-content: center; /* Horizontally centers text */
+    margin: 5px;
+    max-width: 200px;
+    min-width: 120px;
+    height: auto;
+    line-height: 1.4;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Hover effect */
 button:hover {
-    background-color: #0e2923; /* Darker green on hover */
+    background-color: #0e2923;
 }
 
-#headshot{
+/* Headshot styling */
+#headshot {
     width: 300px;
     height: 300px;
+    border-radius: 50%; /* Optional: Make the headshot circular */
+    margin-bottom: 20px; /* Add space below the image */
 }
 
+/* Homepage content container */
 #HomepageContent {
     text-align: center;
-    background-color: #fff; /* White background for content area */
+    background-color: #fff;
     padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for better contrast */
-    width: 80%; /* Adjust to a percentage of the screen width */
-    max-width: 900px; /* Maximum width */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto; /* Center the content block */
 }
+
