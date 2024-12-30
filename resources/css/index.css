@@ -76,6 +76,10 @@
     margin: 0 auto; /* Center the content block */
 }
 
+.ProjectList h3{
+    text-align: left;
+}
+
 /* Media query for mobile devices */
 @media screen and (max-width: 600px) {
     /* Stack the buttons vertically on mobile */
