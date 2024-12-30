@@ -83,12 +83,12 @@
         flex-direction: column; /* Change buttons to stack vertically */
         align-items: center; /* Center the buttons horizontally */
         justify-content: center; /* Center buttons in column */
-        width: 100%; /* Make sure the container takes full width */
+        width: 80%; /* Make sure the container takes full width */
     }
 
     /* Adjust button width for smaller screens */
     .buttons a {
-        width: 100%; /* Make buttons take 100% width of their container */
+        width: 80%; /* Make buttons take 100% width of their container */
         max-width: none; /* Remove the max-width to allow buttons to expand */
         margin: 10px auto; /* Center the buttons and space them vertically */
     }
