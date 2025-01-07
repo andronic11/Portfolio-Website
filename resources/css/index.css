@@ -64,10 +64,9 @@
     margin-bottom: 20px; /* Add space below the image */
 }
 
-#YelpExample {
-    width: 300px;
+#YelpExample{
+    width: 400px;
     height: 300px;
-    margin-bottom: 20px;
 }
 
 /* Homepage content container */
